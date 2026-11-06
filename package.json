@@ -20,6 +20,7 @@
     "joplin-plugin"
   ],
   "files": [
-    "publish"
+    "publish",
+    "CHANGELOG.md"
   ]
 }

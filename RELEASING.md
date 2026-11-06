@@ -18,7 +18,7 @@ These steps publish a new version to GitHub and to npm. The official [Joplin plu
    git tag -a v1.0.1 -m "v1.0.1"
    git push origin main --tags
    ```
-4. Build from the tagged commit:
+4. Build from the tagged commit, with no uncommitted changes, so the commit recorded in the `.json` exists on GitHub:
    ```sh
    sh build.sh
    ```
@@ -29,6 +29,6 @@ These steps publish a new version to GitHub and to npm. The official [Joplin plu
    ```sh
    npm publish
    ```
-   `prepublishOnly` rebuilds `publish/` automatically. Only `publish/`, `package.json`, `README.md`, `LICENSE` and `CHANGELOG.md` are uploaded.
+   `prepublishOnly` rebuilds `publish/` automatically. Only `publish/`, `CHANGELOG.md`, `package.json`, `README.md` and `LICENSE` are uploaded.
 
 The plugin ID (`plugin.tnoahc.pdf-header-footer`) must never change after the first npm release, or Joplin will treat the plugin as a different one.
