@@ -64,7 +64,7 @@ To build the installable package, run:
 sh build.sh      # or: npm run dist
 ```
 
-This writes `publish/plugin.tnoahc.pdf-header-footer.jpl`.
+This writes `publish/plugin.tnoahc.pdf-header-footer.jpl` and the matching `.json` file that the Joplin plugin repository reads. See [RELEASING.md](RELEASING.md) for how to publish a new version.
 
 ## License
 
