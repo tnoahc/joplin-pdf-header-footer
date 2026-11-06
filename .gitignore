@@ -1,0 +1,9 @@
+dist/
+node_modules/
+publish/
+/*.jpl
+
+# Local test exports and notes
+*.pdf
+plugins.md
+launch-post.md
